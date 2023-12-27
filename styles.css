@@ -1,0 +1,360 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+}
+
+.header-logo {
+    width: auto;
+    height: 1.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container12,
+.flex-container3,
+.flex-container4 {
+    display: flex;
+    height: 35vh;
+    margin: 12px;
+}
+
+.flex-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-box-1,
+.flex-box-2,
+.flex-box-3,
+.flex-box-4 {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.flex-box-1 {
+    background-color: #f7f44d;
+}
+
+.flex-box-2 {
+    background-color: #6dffff;
+    margin: 3px;
+}
+
+.flex-box-3 {
+    background-color: #ff50c7;
+}
+
+.flex-box-4 {
+    background-color: #ff6d6d;
+}
+
+.flex-box,
+.flex-box-1,
+.flex-box-2,
+.flex-box-3,
+.flex-box-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-container{
+    position: relative;
+    display: flex;
+}
+
+#productContainer {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    height: auto;
+    margin-top: 10px;
+    overflow-x: scroll;
+    position: relative;
+}
+
+#productContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+#productContainer::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+#productContainer:hover::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+}
+
+#productContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#productContainer:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#productContainer:hover {
+    scrollbar-color: #3498db transparent;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    max-width: 182px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-size: 14px;
+    margin: 3px 10px 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    max-height: 3.6em;
+}
+
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 8px;
+}
+
+.price-after {
+    font-size: 16px;
+    color: #FF7518;
+    font-weight: bold;
+}
+
+.price-before {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.discount-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.discount {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(232, 22, 22);
+    margin-left: 5px;
+    border-radius: 9px;
+    padding: 2px;
+    background-color: rgba(250, 175, 175, 0.941);
+}
+
+.product-card button {
+    width: 90%;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.product-card button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.scroll-button-next,
+.scroll-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    text-align: center;
+    color: #3498db;
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.scroll-button-next {
+    right: 10px;
+}
+
+.scroll-button-prev {
+    left: 10px;
+}
+
+.scroll-button-next:hover,
+.scroll-button-prev:hover {
+    background-color: #d8d8d8;
+}
+
+.scroll-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.scroll-to-top-button {
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top-button:hover {
+    background-color: #d8d8d8;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .product-card {
+        max-width: 132px;
+    }
+
+    .header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo {
+        margin-right: auto;
+        margin-left: auto; 
+    }
+
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-container4{
+        order: 1;
+    }
+    
+    .flex-container3{
+        order: 2;
+    }
+    
+    .flex-container12{
+        order: 4;
+    }
+    
+    
+    .product-container {
+        display: flex;
+        position: relative;
+        order: 3;
+    }
+
+
+    .scroll-button-next,
+    .scroll-button-prev {
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .product-card {
+        max-width: 182px;
+    }
+
+    header {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .header-logo {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+}
+
+.expand-button {
+    cursor: pointer;
+    color: #3498db;
+    padding: 5px;
+}
+
+.expanded {
+    max-height: 200px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.expand-button:hover {
+    color: #2980b9;
+}
+
+.footer-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    text-align: justify;
+}
+
+.footer-content.expanded {
+    max-height: 200px;
+    transition: max-height 0.3s ease-in;
+}
