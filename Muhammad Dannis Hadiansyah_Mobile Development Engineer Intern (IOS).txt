@@ -1,0 +1,60 @@
+Muhammad Dannis Hadiansyah
+
+I. Written Test
+
+1. What is a JavaScript Framework and explain about Vue.js as one of the JavaScript Framework!
+2. What is the use of ellipsis?
+3. Explain animation properties below:
+       a. @keyframe
+       b. animation-name
+       c. animation-duration
+       d. animation-iteration
+       e. animation-direction
+4. Please explain how lazy load works in JavaScript!
+5. Mention at least 5 git commands and describe each function of them!
+
+Answer
+1. JavaScript framework is a development infrastructure that provides tools, libraries, and guidelines to streamline the web application development process. Its primary purpose is to offer an organized structure and ready-to-use functionalities, allowing developers to focus more on feature development rather than dealing with low-level technical details.
+
+Vue.js, as an example of a JavaScript framework, stands out as a progressive and easily adoptable solution. Designed to be incrementally adoptable, Vue.js enables developers to use only the necessary parts. Its strengths include a reactive data binding system, a component-based architecture for reusable components, and a flexible API. With its straightforward approach and friendly learning curve, Vue.js is a popular choice for efficient and easily learnable user interface development.
+
+2. Ellipsis (three dots) is used to indicate the omission of parts of a text, typically to imply that some portions have been removed or are not included. Ellipsis can also be utilized to create uncertainty, suspense, or add a dramatic effect in writing.
+
+In HTML, the ellipsis character ("...") is not employed to signify omission or excluded content, as it is in written language. Instead, ellipsis is often implemented through CSS to represent content that exceeds the size limits of a fixed container.
+
+3. a. @keyframes:
+@keyframes in CSS establishes the animation behavior at various points in its execution. It allows defining keyframes with specific styles, offering control over how an element should transform during the animation.
+
+
+b. animation-name:
+The animation-name property, part of the animation shorthand, associates the animation with a specific @keyframes rule. It links the animation to a set of predefined styles, determining the visual changes an element undergoes over time.
+
+c. animation-duration:
+Within the animation shorthand, animation-duration sets the time it takes for one complete cycle of the animation. This property influences the speed of the animation, determining how fast or slow the transition between keyframes occurs.
+
+d. animation-iteration-count:
+The animation-iteration-count property, part of the animation shorthand, specifies the number of times the animation cycle should be played. It can be a specific number (e.g., 2 for two iterations) or infinite for continuous repetition.
+
+e. animation-direction:
+Part of the animation shorthand, animation-direction determines the direction of the animation sequence. It can be set to normal for forward, reverse for backward, alternate for forward-backward, or alternate-reverse for backward-forward cycling.
+
+4. Lazy loading in the context of JavaScript is a technical approach to optimizing web page performance by deferring the loading of resources until they are needed. When employing lazy loading, elements such as images or scripts are not loaded when the page is initially loaded but only when they are about to appear in the user's viewport. This can be achieved using events like scroll events or the Intersection Observer API. With Intersection Observer, developers can monitor when specific elements enter or exit the viewport and trigger the loading of associated resources as needed.
+
+A common implementation involves attaching a data-src attribute with the actual resource URL to image elements and updating the src attribute only when the image is about to be visible to the user. This helps reduce the initial page load time and optimizes bandwidth usage, especially on pages with a large number of elements. Lazy loading positively impacts website performance by diminishing the initial load burden and enhancing overall site responsiveness.
+
+5. - git init:
+Function: Initializes a new Git repository, setting up the necessary data structures and configuration files in the current directory. This is the first step when starting a new project or wanting to version control an existing project.
+
+- git add:
+Function: Adds changes made in the working directory to the staging area, preparing them for the next commit. It allows selective staging of specific files or all changes.
+- git commit:
+Function: Records the changes staged in the commit, creating a permanent snapshot in the Git repository. Each commit is accompanied by a commit message describing the changes made.
+- git pull:
+Function: Fetches changes from a remote repository and merges them into the current branch. It is used to update the local repository with changes from the remote repository, ensuring synchronization.
+
+- git push:
+Function: Pushes local commits to a remote repository, making changes available to others. It ensures that the remote repository reflects the latest state of the local branch, facilitating collaborative development.
+
+Link for Practical Test:
+https://github.com/mdannish/blibli-layout-test
+
